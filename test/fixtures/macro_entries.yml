@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  protein: 1
+  fat: 1
+  carbs: 1
+  step_count: 1
+  notes: MyText
+  date: 2025-04-02
+
+two:
+  protein: 1
+  fat: 1
+  carbs: 1
+  step_count: 1
+  notes: MyText
+  date: 2025-04-02
