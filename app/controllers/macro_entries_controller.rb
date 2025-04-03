@@ -1,0 +1,2 @@
+class MacroEntriesController < ApplicationController
+end
