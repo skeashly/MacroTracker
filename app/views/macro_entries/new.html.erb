@@ -1,0 +1,39 @@
+<h1>New Macro Entry</h1>
+
+<%= form_with model: @macro_entry, local: true do |f| %>
+  <div>
+    <%= f.label :protein %>
+    <%= f.number_field :protein %>
+  </div>
+
+  <div>
+    <%= f.label :fat %>
+    <%= f.number_field :fat %>
+  </div>
+
+  <div>
+    <%= f.label :carbs %>
+    <%= f.number_field :carbs %>
+  </div>
+
+  <div>
+    <%= f.label :step_count %>
+    <%= f.number_field :step_count %>
+  </div>
+
+  <div>
+    <%= f.label :notes %>
+    <%= f.text_area :notes %>
+  </div>
+
+  <div>
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+  </div>
+
+  <div>
+    <%= f.submit "Save Macro Entry" %>
+  </div>
+<% end %>
+
+<%= link_to "Back to Entries", macro_entries_path %>

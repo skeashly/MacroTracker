@@ -1,0 +1,12 @@
+<h1>Macro Entries</h1>
+
+<%= link_to "New Macro Entry", new_macro_entry_path %>
+
+<ul>
+  <% @macro_entries.each do |entry| %>
+    <li>
+      <%= link_to entry.date, macro_entry_path(entry) %> -
+      Protein: <%= entry.protein %>g, Fat: <%= entry.fat %>g, Carbs: <%= entry.carbs %>g
+    </li>
+  <% end %>
+</ul>

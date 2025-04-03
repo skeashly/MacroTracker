@@ -1,0 +1,9 @@
+<h1>Macro Entry for <%= @macro_entry.date %></h1>
+
+<p><strong>Protein:</strong> <%= @macro_entry.protein %>g</p>
+<p><strong>Fat:</strong> <%= @macro_entry.fat %>g</p>
+<p><strong>Carbs:</strong> <%= @macro_entry.carbs %>g</p>
+<p><strong>Step Count:</strong> <%= @macro_entry.step_count %></p>
+<p><strong>Notes:</strong> <%= @macro_entry.notes %></p>
+
+<%= link_to "Back to Entries", macro_entries_path %>
