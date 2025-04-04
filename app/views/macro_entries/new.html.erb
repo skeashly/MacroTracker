@@ -1,34 +1,35 @@
 <h1>New Macro Entry</h1>
 
 <%= form_with model: @macro_entry, local: true do |f| %>
+
   <div>
-    <%= f.label :protein %>
-    <%= f.number_field :protein %>
+    <%= required_label(f, :protein) %>
+    <%= f.number_field :protein, required: true %>
   </div>
 
   <div>
-    <%= f.label :fat %>
-    <%= f.number_field :fat %>
+    <%= required_label(f,:fat ) %>
+    <%= f.number_field :fat, required: true %>
   </div>
 
   <div>
-    <%= f.label :carbs %>
-    <%= f.number_field :carbs %>
+    <%= required_label(f,:carbs ) %>
+    <%= f.number_field :carbs, required: true %>
   </div>
 
   <div>
-    <%= f.label :step_count %>
-    <%= f.number_field :step_count %>
+    <%= required_label(f,:step_count) %>
+    <%= f.number_field :step_count, required: true %>
   </div>
 
   <div>
-    <%= f.label :notes %>
-    <%= f.text_area :notes %>
+    <%= required_label(f,:notes)  %>
+    <%= f.text_area :notes, required: true %>
   </div>
 
   <div>
-    <%= f.label :date %>
-    <%= f.date_field :date %>
+    <%= required_label(f,:date)  %>
+    <%= f.date_field :date, required: true %>
   </div>
 
   <div>
